@@ -1,0 +1,46 @@
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none;
+  color: #000;
+  cursor: pointer;
+}
+
+h6 {
+  padding: 15px;
+  font-size: 16px;
+}
+
+.item-list {
+  list-style-type: none;
+  display: flex;
+}
+
+.item-list > figure {
+  position: relative;
+  overflow: hidden;
+}
+
+.item-list > figure > img {
+  padding: 5px;
+}
+
+
+.item-list > figure > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 0;
+  opacity: 0;
+  width: 100%;
+  transition-duration: 0.1s;
+  background-color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.item-list > figure:hover > a {
+  opacity: 0.8;
+}
